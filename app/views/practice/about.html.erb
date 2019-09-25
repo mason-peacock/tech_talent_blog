@@ -1,0 +1,32 @@
+<!-- about.html.erb -->
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<!-- Remember, internal stylesheet is not the best,
+    but we have no way to get a Ruby instance
+    variable into a CSS file, so we don't have
+    much of an alternative here -->
+<style>
+
+    #color_me_in {
+        background-color: <%= @color %>;
+        color: white;
+        width: 250px;
+        height: 250px;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+	<div id="color_me_in">
+	    <p>
+	        <%= @color.upcase %> BOX ACTIVATED!
+	    </p>
+	</div>
+</body>
+</html>
